@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="only light">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Каталог проектов домов и коттеджей</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"> -->
+<script defer="defer" src="./assets/scripts/main.js"></script><link href="./assets/styles/main..css" rel="stylesheet"></head>
+
+<body>
+
+    <main class="catalog-page">
+        <section class="headline">
+            <div class="container">
+                <div class="headline__wrapper">
+                    <h1 class="section-header headline__header">Каталог проектов домов и коттеджей</h1>
+                    <p class="headline__desc section-text">
+                        <b>В каталоге Rotenstein представлены наиболее популярные проекты элитных домов и коттеджей
+                            для комфортного проживания загородом.</b> В нашей коллекции вы найдёте готовые проекты
+                        с подробными планировками этажей, характеристиками и ценами на строительство под ключ.
+                        <br><br>
+                        Проектная документация может быть изменена в соответствии с предпочтениями заказчика,
+                        адаптирована к особенностям земельного участка и конкретным условиям эксплуатации в Москве,
+                        Московской области или регионах России.
+                    </p>
+                </div>
+                <img src="assets/img/head..png" alt="" class="headline__img">
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__top">
+                    <div class="breadcrumbs">
+                        <a href="#" class="breadcrumbs__item">Главная</a>
+                        <a href="#" class="breadcrumbs__item">Проекты домов</a>
+                        <a href="#" class="breadcrumbs__item">Проекты домов без гаража</a>
+                    </div>
+                    <div class="catalog__sort__trigger">
+                        <img src="assets/img/filters..png" alt="">
+                        <span>Фильтры</span>
+                    </div>
+                    <div class="catalog__sort__wrapper">
+                        <span>Сортировка по:</span>
+                        <div class="catalog__sort__select-wrap">
+                            <span class="catalog__sort__select__current ac-trigger">Площадь (по убыванию)</span>
+                            <ul class="catalog__sort__select__list ac-list" style="display: none;">
+                                <li class="catalog__sort__select__list__item">Площадь (по возрастанию)</li>
+                                <li class="catalog__sort__select__list__item">Площадь (по убыванию)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__body">
+                    <div class="catalog__side-bar">
+                        <div class="catalog__filters__overlay">
+                            <div class="catalog__filters">
+                                <div class="catalog__filters__mobile">
+                                    <button class="catalog__filters__close">Назад</button>
+                                </div>
+                                <form action="" class="catalog__filters__search-form">
+                                    <div class="catalog__filters__wrap">
+                                        <label class="catalog__filters__search-label">
+                                            <input type="text" placeholder="Название проекта..." class="catalog__filters__search-field">
+                                        </label>
+                                    </div>
+                                    <div class="catalog__filter__ac-wrap">
+                                        <span class="catalog__filter__header ac-trigger _active">Площадь</span>
+                                        <div class="catalog__filter__range-wrap">
+                                            <div id="filter-range"></div>
+                                            <div id="slider-range">
+                                                <input type="text" id="min" value="1000">
+                                                <input type="text" id="max" value="9000">
+                                            </div>
+                                        </div>
+                                        <div class="ac-list _active">
+                                            <span class="catalog__filter__header">Этажность</span>
+                                            <ul class="catalog__filter__list">
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>1 этажа</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>2 этажа</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>3 этажа</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <ul class="catalog__filter__list">
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>С мансардой</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>С цоколем</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__filter__ac-wrap">
+                                        <span class="catalog__filter__header ac-trigger _active">Количество
+                                            спален</span>
+                                        <div class="ac-list _active">
+                                            <ul class="catalog__filter__list">
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>2 спальни</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>3 спальни</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>4 спальни</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>5 и более спален</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__filter__ac-wrap">
+                                        <span class="catalog__filter__header ac-trigger _active">Гараж</span>
+                                        <div class="ac-list _active">
+                                            <ul class="catalog__filter__list">
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Без гаража</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>С гаражом</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__filter__ac-wrap">
+                                        <span class="catalog__filter__header ac-trigger _active">Архитектурный
+                                            стиль</span>
+                                        <div class="ac-list _active">
+                                            <ul class="catalog__filter__list">
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Английский</span>
+                                                        <div class="info-trigger">
+                                                            <div class="info-content">
+                                                                <img src="assets/img/style5..jpg" alt="" class="info__img">
+                                                                <span class="info__header">Английский стиль</span>
+                                                                <p class="info__desc">
+                                                                    В архитектуре английских домов прослеживается
+                                                                    строгость
+                                                                    и функциональность, надежность и долговечность. В
+                                                                    таких
+                                                                    домах используются натуральные, экологически-чистые
+                                                                    отделочные материалы.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Современный</span>
+                                                        <div class="info-trigger">
+                                                            <div class="info-content">
+                                                                <img src="assets/img/style1..jpg" alt="" class="info__img">
+                                                                <span class="info__header">Современный стиль</span>
+                                                                <p class="info__desc">
+                                                                    Под современным стилем понимается целый комплекс
+                                                                    архитектурных решений, используемых сегодня. Нередко
+                                                                    он представляет собой смешение нескольких
+                                                                    архитектурных
+                                                                    стилей, например, эко-стиля и минимализма, модерна
+                                                                    и английского стиля.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Шале</span>
+                                                        <div class="info-trigger">
+                                                            <div class="info-content">
+                                                                <img src="assets/img/style6..jpg" alt="" class="info__img">
+                                                                <span class="info__header">Стиль шале</span>
+                                                                <p class="info__desc">
+                                                                    Дом, построенный по альпийским традициям, легко
+                                                                    узнать.
+                                                                    Прежде всего, по традиционному внешнему виду:
+                                                                    «каменный
+                                                                    низ – деревянный верх» и крутая покатая крыша. Оно
+                                                                    имеет
+                                                                    простой, вместе с тем, брутальный и основательный
+                                                                    вид.
+                                                                    Выполненный из натуральных природных материалов,
+                                                                    отличающихся качеством и экологичностью,
+                                                                    архитектурный
+                                                                    стиль шале демонстрирует прочность и долговечность.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Классический</span>
+                                                        <div class="info-trigger">
+                                                            <div class="info-content">
+                                                                <img src="assets/img/style4..jpg" alt="" class="info__img">
+                                                                <span class="info__header">Классический стиль</span>
+                                                                <p class="info__desc">
+                                                                    Дома в классическом стиле обычно имеют большую
+                                                                    площадь,
+                                                                    могут состоять из нескольких этажей. Характерные
+                                                                    черты
+                                                                    классического стиля — это симметрия, колонны и
+                                                                    балюстрады в качестве элементов декора, высокие
+                                                                    узкие
+                                                                    окна и светлые тона в отделке. Фасад такого дома
+                                                                    обычно
+                                                                    отделан штукатуркой, возможно использование кованных
+                                                                    элементов — решёток, калиток, ограждений.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Райт</span>
+                                                        <div class="info-trigger">
+                                                            <div class="info-content">
+                                                                <img src="assets/img/style2..jpg" alt="" class="info__img">
+                                                                <span class="info__header">Стиль Райта</span>
+                                                                <p class="info__desc">
+                                                                    Домам в стиле Райта присуща приземистость
+                                                                    и горизонтальная направленность. Это также связано
+                                                                    с идеей «единства с природой». Линейность стиля
+                                                                    отсылает
+                                                                    нас к минимализму. Отсюда же большое количество
+                                                                    эркеров,
+                                                                    выступов и строгих массивных колонн, которые только
+                                                                    подчёркивает важность геометрии в архитектурном
+                                                                    направлении. При этом, благодаря материалам
+                                                                    и цветовой
+                                                                    гамме, дома прерий никак не выбиваются из окружающей
+                                                                    их природной среды.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Хай Тек</span>
+                                                        <div class="info-trigger">
+                                                            <div class="info-content">
+                                                                <img src="assets/img/style3..jpg" alt="" class="info__img">
+                                                                <span class="info__header">Стиль Хай Тек</span>
+                                                                <p class="info__desc">
+                                                                    Главная идея архитектуры хай тека состоит в том,
+                                                                    чтобы каждая из составляющих созданного объекта
+                                                                    выполняла как можно больше функций — какие-либо
+                                                                    украшения или не несущие на себе нагрузки элементы
+                                                                    исключены. Красота создаётся посредством
+                                                                    использования
+                                                                    природных фактур и геометрических форм в качестве
+                                                                    контуров и направляющих, а также при помощи игры
+                                                                    света
+                                                                    и тени.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Барнхаус</span>
+                                                        <div class="info-trigger">
+                                                            <div class="info-content">
+                                                                <img src="assets/img/style8..jpg" alt="" class="info__img">
+                                                                <span class="info__header">Барнхаус</span>
+                                                                <p class="info__desc">
+                                                                    Барнхаус— архитектурный стиль, находящийся на грани
+                                                                    трех
+                                                                    актуальных течений – лофта, минимализма и био-тека.
+                                                                    Ключевой особенностью домов в этом стиле являются
+                                                                    простые геометрические формы. Дом в стиле барнхаус
+                                                                    смотрится стильно, но в то же время лаконично и
+                                                                    сдержанно. В современных конструкциях крыша плавно
+                                                                    переходит в стену, имитируя единое цельное
+                                                                    сооружение.
+                                                                    Внутри строения заключена функциональная внутренняя
+                                                                    планировка - данный архитектурный стиль продуман до
+                                                                    мелочей, технологичен и эффективен.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Скандинавский</span>
+                                                        <div class="info-trigger">
+                                                            <div class="info-content">
+                                                                <img src="assets/img/style7..jpg" alt="" class="info__img">
+                                                                <span class="info__header">Скандинавский стиль</span>
+                                                                <p class="info__desc">
+                                                                    Скандинавский стиль — это простота и
+                                                                    функциональность,
+                                                                    которые сочетаются в уникальное понятие “хюгге”,
+                                                                    которое
+                                                                    трактуется как уют и практичность. Дома в
+                                                                    скандинавском
+                                                                    стиле имеют лаконичный вид. Чаще всего в постройках
+                                                                    используются окна большого размера с массивными
+                                                                    рамами,
+                                                                    а в качестве оформления входа используется небольшое
+                                                                    деревянное крыльцо или терраса. Сам стиль
+                                                                    характеризуется надежностью и высокой
+                                                                    энергоэффективностью.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Ар-деко</span>
+                                                        <div class="info-trigger">
+                                                            <div class="info-content">
+                                                                <img src="assets/img/style7..jpg" alt="" class="info__img">
+                                                                <span class="info__header">Ар-деко</span>
+                                                                <p class="info__desc">
+                                                                    Ар-деко является золотой серединой между шиком,
+                                                                    богатством и функциональностью. Он пропитан особым
+                                                                    жизнеутверждающим настроением, который предлагает
+                                                                    наслаждаться жизнью здесь и сейчас.
+                                                                    <br><br>
+                                                                    Архитектуру в стиле Ар-деко выделяет наличие строгих
+                                                                    геометрических форм: от четких, энергичных линий,
+                                                                    прямоугольников и зигзагов до обтекаемых изгибов,
+                                                                    эллипсов и кругов. При отделке домов часто
+                                                                    применяются
+                                                                    роскошные натуральные материалы: редкие породы
+                                                                    дерева,
+                                                                    серебро, латунь, хрусталь и т. д.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__filter__ac-wrap">
+                                        <span class="catalog__filter__header ac-trigger _active">Технологии
+                                            строительства</span>
+                                        <div class="ac-list _active">
+                                            <ul class="catalog__filter__list _one-column">
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Каменные дома</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Деревянные дома</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Комбинированые дома</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__filter__ac-wrap">
+                                        <span class="catalog__filter__header ac-trigger _active">Доп помещения</span>
+                                        <div class="ac-list _active">
+                                            <ul class="catalog__filter__list">
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Зона барбекю</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Сауна/баня/хаммам</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Бассейн</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Кабинет</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Бильярдная</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Мансарда</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Гардеробная</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Тренажерный зал</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__filter__ac-wrap">
+                                        <span class="catalog__filter__header ac-trigger _active">Архитектурные
+                                            решения</span>
+                                        <div class="ac-list _active">
+                                            <ul class="catalog__filter__list">
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Балкон</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Камин</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Терраса</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Эркер</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Второй свет</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Эксплуатируемая кровля</span>
+                                                    </label>
+                                                </li>
+                                                <li class="catalog__filter__list__item">
+                                                    <label class="catalog__filter__list__item__label">
+                                                        <input type="checkbox" class="catalog__filter__list__item__check">
+                                                        <div class="catalog__filter__list__item__fake-check"></div>
+                                                        <span>Панорамное остекление</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__filter__search-form__controlls">
+                                        <button type="submit" class="btn catalog__filter__search-form__submit">Показать</button>
+                                        <button class="catalog__filter__search-form__reset">Сбросить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="catalog__banner">
+                            <div class="catalog__banner__img-box">
+                                <img src="assets/img/banner..jpg" alt="">
+                            </div>
+                            <div class="catalog__banner__body">
+                                <ul class="catalog__banner__list">
+                                    <li class="catalog__banner__list__item">
+                                        Поможем подобрать оптимальный готовый проект
+                                    </li>
+                                    <li class="catalog__banner__list__item">
+                                        Рассчитаем стоимость индивидуального
+                                        проекта
+                                    </li>
+                                </ul>
+                                <a href="tel:+74992907617" class="catalog__banner__phone">+7 (499) 290-76-17</a>
+                                <div class="catalog__banner__wrap">
+                                    <a class="catalog__banner__btn whatsap-btn">
+                                        <img src="assets/img/bannerbtn1..png" alt="">
+                                    </a>
+                                    <a class="catalog__banner__btn telegram-btn">
+                                        <img src="assets/img/bannerbtn2..png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="catalog__list">
+
+                        <li class="catalog__list__item">
+                            <div class="catalog__list__item__img-box">
+                                <div class="hot">
+                                    <img src="assets/img/gift..png" alt="">
+                                    <span>Подарок</span>
+                                </div>
+                                <img src="assets/img/catalog1..jpg" alt="">
+                            </div>
+                            <div class="catalog__list__item__desc">
+                                <div class="catalog__list__item__wrapper">
+                                    <span class="catalog__list__item__name">Проект</span>
+                                    <span class="catalog__list__item__square">280 м2</span>
+                                    <div class="catalog__list__item__price">
+                                        <span class="actual-price">
+                                            от 120 000 000 ₽
+                                            <div class="info-trigger">
+                                                <div class="info-content">
+                                                    <ul class="info-list">
+                                                        <li class="info-list__item">
+                                                            Итоговая стоимость зависит от комплектации и выбранных
+                                                            материалов, особенностей земельного участка, а также от
+                                                            сроков выхода на стройку.
+                                                        </li>
+                                                        <li class="info-list__item">
+                                                            Удалённость объекта строительства дальше 200 км от Москвы
+                                                            также может влиять на финальную стоимость.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <!-- <span class="old__price">180 000 000 ₽</span> -->
+                                    </div>
+                                    <span class="catalog__list__item__type">Каменный дом</span>
+                                </div>
+                                <ul class="catalog__list__item__list">
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-1..svg" alt="">
+                                        <span>2 этажа</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-2..svg" alt="">
+                                        <span>4 спальни</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-3..svg" alt="">
+                                        <span>4 санузла</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-4..svg" alt="">
+                                        <span>без гаража</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="catalog__list__item">
+                            <div class="catalog__list__item__img-box">
+                                <img src="assets/img/catalog2..jpg" alt="">
+                            </div>
+                            <div class="catalog__list__item__desc">
+                                <div class="catalog__list__item__wrapper">
+                                    <span class="catalog__list__item__name">Проект</span>
+                                    <span class="catalog__list__item__square">280 м2</span>
+                                    <div class="catalog__list__item__price">
+                                        <span class="actual-price">
+                                            от 120 000 000 ₽
+                                            <div class="info-trigger">
+                                                <div class="info-content">
+                                                    <ul class="info-list">
+                                                        <li class="info-list__item">
+                                                            Итоговая стоимость зависит от комплектации и выбранных
+                                                            материалов, особенностей земельного участка, а также от
+                                                            сроков выхода на стройку.
+                                                        </li>
+                                                        <li class="info-list__item">
+                                                            Удалённость объекта строительства дальше 200 км от Москвы
+                                                            также может влиять на финальную стоимость.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <span class="old__price">180 000 000 ₽</span>
+                                    </div>
+                                    <span class="catalog__list__item__type">Каменный дом</span>
+                                </div>
+                                <ul class="catalog__list__item__list">
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-1..svg" alt="">
+                                        <span>2 этажа</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-2..svg" alt="">
+                                        <span>4 спальни</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-3..svg" alt="">
+                                        <span>4 санузла</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-4..svg" alt="">
+                                        <span>без гаража</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="catalog__list__item">
+                            <div class="catalog__list__item__img-box">
+                                <img src="assets/img/catalog3..jpg" alt="">
+                            </div>
+                            <div class="catalog__list__item__desc">
+                                <div class="catalog__list__item__wrapper">
+                                    <span class="catalog__list__item__name">Проект</span>
+                                    <span class="catalog__list__item__square">280 м2</span>
+                                    <div class="catalog__list__item__price">
+                                        <span class="actual-price">
+                                            от 120 000 000 ₽
+                                            <div class="info-trigger">
+                                                <div class="info-content">
+                                                    <ul class="info-list">
+                                                        <li class="info-list__item">
+                                                            Итоговая стоимость зависит от комплектации и выбранных
+                                                            материалов, особенностей земельного участка, а также от
+                                                            сроков выхода на стройку.
+                                                        </li>
+                                                        <li class="info-list__item">
+                                                            Удалённость объекта строительства дальше 200 км от Москвы
+                                                            также может влиять на финальную стоимость.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <span class="old__price">180 000 000 ₽</span>
+                                    </div>
+                                    <span class="catalog__list__item__type">Каменный дом</span>
+                                </div>
+                                <ul class="catalog__list__item__list">
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-1..svg" alt="">
+                                        <span>2 этажа</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-2..svg" alt="">
+                                        <span>4 спальни</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-3..svg" alt="">
+                                        <span>4 санузла</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-4..svg" alt="">
+                                        <span>без гаража</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="catalog__list__item">
+                            <div class="catalog__list__item__img-box">
+                                <div class="hot popular">
+                                    <img src="assets/img/star..png" alt="">
+                                    <span>Популярный проект</span>
+                                </div>
+                                <img src="assets/img/catalog4..jpg" alt="">
+                            </div>
+                            <div class="catalog__list__item__desc">
+                                <div class="catalog__list__item__wrapper">
+                                    <span class="catalog__list__item__name">Проект</span>
+                                    <span class="catalog__list__item__square">280 м2</span>
+                                    <div class="catalog__list__item__price">
+                                        <span class="actual-price">
+                                            от 120 000 000 ₽
+                                            <div class="info-trigger">
+                                                <div class="info-content">
+                                                    <ul class="info-list">
+                                                        <li class="info-list__item">
+                                                            Итоговая стоимость зависит от комплектации и выбранных
+                                                            материалов, особенностей земельного участка, а также от
+                                                            сроков выхода на стройку.
+                                                        </li>
+                                                        <li class="info-list__item">
+                                                            Удалённость объекта строительства дальше 200 км от Москвы
+                                                            также может влиять на финальную стоимость.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <span class="old__price">180 000 000 ₽</span>
+                                    </div>
+                                    <span class="catalog__list__item__type">Каменный дом</span>
+                                </div>
+                                <ul class="catalog__list__item__list">
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-1..svg" alt="">
+                                        <span>2 этажа</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-2..svg" alt="">
+                                        <span>4 спальни</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-3..svg" alt="">
+                                        <span>4 санузла</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-4..svg" alt="">
+                                        <span>без гаража</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="catalog__list__item">
+                            <div class="catalog__list__item__img-box">
+                                <img src="assets/img/catalog5..jpg" alt="">
+                            </div>
+                            <div class="catalog__list__item__desc">
+                                <div class="catalog__list__item__wrapper">
+                                    <span class="catalog__list__item__name">Проект</span>
+                                    <span class="catalog__list__item__square">280 м2</span>
+                                    <div class="catalog__list__item__price">
+                                        <span class="actual-price">
+                                            от 120 000 000 ₽
+                                            <div class="info-trigger">
+                                                <div class="info-content">
+                                                    <ul class="info-list">
+                                                        <li class="info-list__item">
+                                                            Итоговая стоимость зависит от комплектации и выбранных
+                                                            материалов, особенностей земельного участка, а также от
+                                                            сроков выхода на стройку.
+                                                        </li>
+                                                        <li class="info-list__item">
+                                                            Удалённость объекта строительства дальше 200 км от Москвы
+                                                            также может влиять на финальную стоимость.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <span class="old__price">180 000 000 ₽</span>
+                                    </div>
+                                    <span class="catalog__list__item__type">Каменный дом</span>
+                                </div>
+                                <ul class="catalog__list__item__list">
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-1..svg" alt="">
+                                        <span>2 этажа</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-2..svg" alt="">
+                                        <span>4 спальни</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-3..svg" alt="">
+                                        <span>4 санузла</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-4..svg" alt="">
+                                        <span>без гаража</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="catalog__list__item">
+                            <div class="catalog__list__item__img-box">
+                                <div class="hot popular">
+                                    <img src="assets/img/star..png" alt="">
+                                    <span>Популярный проект</span>
+                                </div>
+                                <img src="assets/img/catalog6..jpg" alt="">
+                            </div>
+                            <div class="catalog__list__item__desc">
+                                <div class="catalog__list__item__wrapper">
+                                    <span class="catalog__list__item__name">Проект</span>
+                                    <span class="catalog__list__item__square">280 м2</span>
+                                    <div class="catalog__list__item__price">
+                                        <span class="actual-price">
+                                            от 120 000 000 ₽
+                                            <div class="info-trigger">
+                                                <div class="info-content">
+                                                    <ul class="info-list">
+                                                        <li class="info-list__item">
+                                                            Итоговая стоимость зависит от комплектации и выбранных
+                                                            материалов, особенностей земельного участка, а также от
+                                                            сроков выхода на стройку.
+                                                        </li>
+                                                        <li class="info-list__item">
+                                                            Удалённость объекта строительства дальше 200 км от Москвы
+                                                            также может влиять на финальную стоимость.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <span class="old__price">180 000 000 ₽</span>
+                                    </div>
+                                    <span class="catalog__list__item__type">Каменный дом</span>
+                                </div>
+                                <ul class="catalog__list__item__list">
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-1..svg" alt="">
+                                        <span>2 этажа</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-2..svg" alt="">
+                                        <span>4 спальни</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-3..svg" alt="">
+                                        <span>4 санузла</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-4..svg" alt="">
+                                        <span>без гаража</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="catalog__list__item">
+                            <div class="catalog__list__item__img-box">
+                                <img src="assets/img/catalog2..jpg" alt="">
+                            </div>
+                            <div class="catalog__list__item__desc">
+                                <div class="catalog__list__item__wrapper">
+                                    <span class="catalog__list__item__name">Проект</span>
+                                    <span class="catalog__list__item__square">280 м2</span>
+                                    <div class="catalog__list__item__price">
+                                        <span class="actual-price">
+                                            от 120 000 000 ₽
+                                            <div class="info-trigger">
+                                                <div class="info-content">
+                                                    <ul class="info-list">
+                                                        <li class="info-list__item">
+                                                            Итоговая стоимость зависит от комплектации и выбранных
+                                                            материалов, особенностей земельного участка, а также от
+                                                            сроков выхода на стройку.
+                                                        </li>
+                                                        <li class="info-list__item">
+                                                            Удалённость объекта строительства дальше 200 км от Москвы
+                                                            также может влиять на финальную стоимость.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <span class="old__price">180 000 000 ₽</span>
+                                    </div>
+                                    <span class="catalog__list__item__type">Каменный дом</span>
+                                </div>
+                                <ul class="catalog__list__item__list">
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-1..svg" alt="">
+                                        <span>2 этажа</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-2..svg" alt="">
+                                        <span>4 спальни</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-3..svg" alt="">
+                                        <span>4 санузла</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-4..svg" alt="">
+                                        <span>без гаража</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="catalog__list__item">
+                            <div class="catalog__list__item__img-box">
+                                <img src="assets/img/catalog2..jpg" alt="">
+                            </div>
+                            <div class="catalog__list__item__desc">
+                                <div class="catalog__list__item__wrapper">
+                                    <span class="catalog__list__item__name">Проект</span>
+                                    <span class="catalog__list__item__square">280 м2</span>
+                                    <div class="catalog__list__item__price">
+                                        <span class="actual-price">
+                                            от 120 000 000 ₽
+                                            <div class="info-trigger">
+                                                <div class="info-content">
+                                                    <ul class="info-list">
+                                                        <li class="info-list__item">
+                                                            Итоговая стоимость зависит от комплектации и выбранных
+                                                            материалов, особенностей земельного участка, а также от
+                                                            сроков выхода на стройку.
+                                                        </li>
+                                                        <li class="info-list__item">
+                                                            Удалённость объекта строительства дальше 200 км от Москвы
+                                                            также может влиять на финальную стоимость.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <span class="old__price">180 000 000 ₽</span>
+                                    </div>
+                                    <span class="catalog__list__item__type">Каменный дом</span>
+                                </div>
+                                <ul class="catalog__list__item__list">
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-1..svg" alt="">
+                                        <span>2 этажа</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-2..svg" alt="">
+                                        <span>4 спальни</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-3..svg" alt="">
+                                        <span>4 санузла</span>
+                                    </li>
+                                    <li class="catalog__list__item__list__item">
+                                        <img src="assets/img/portfolio-icon-4..svg" alt="">
+                                        <span>без гаража</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <button class="show-more btn">Показать еще</button>
+            </div>
+        </section>
+        <section class="building">
+            <div class="container">
+                <h2 class="section-header building__heading">Строительство загородного дома по готовому проекту</h2>
+                <div class="building__wrapper">
+                    <p class="building__desc">
+                        Представленные в каталоге проекты загородных домов были разработаны специалистами компании
+                        Rotenstein для их дальнейшего строительства. Готовые проекты содержат полный перечень чертежей,
+                        визуализаций, смет и других документов, необходимых для постройки надёжного и долговечного
+                        коттеджа под ключ.
+                        <br><br>
+                        С помощью применения различных фильтров вы можете настроить параметры поиска нужного
+                        вам проекта, например по материалу стен (клеёный брус, кирпич, керамоблоки, газобетон),
+                        есть варианты различной этажности, с балконами, террасами, гаражами и пр. Выберите понравившийся
+                        проект, а специалисты Rotenstein внесут изменения согласно вашим пожеланиям и построят дом,
+                        который прослужит многие десятилетия.
+                    </p>
+                    <div class="building__form__wrap">
+                        <form action="" class="building__form">
+                            <span class="building__form__header">
+                                <b>Получите бесплатную консультацию по телефону 8 800 234-63-13</b>
+                                или закажите обратный звонок
+                            </span>
+                            <input type="phone" data-type="phone" class="building__form__input" placeholder="*Ваш телефон">
+                            <button type="submit" class="btn building__form__submit">Отправить</button>
+                            <span>
+                                Нажимая на кнопку, вы соглашаетесь с <a href="">Политикой обработки персональных
+                                    данных</a>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="developing">
+            <div class="container">
+                <h2 class="section-header developing__header">
+                    Доработка готовых проектов домов и коттеджей
+                </h2>
+                <div class="developing__wrap">
+                    <p class="developing__desc">
+                        Любой типовой проект из каталога Rotenstein можно доработать с архитектором: изменить материал
+                        отделки фасада, добавить или убрать террасу, изменить площадь жилых комнат, их назначение и
+                        многое другое. Стоит отметить, что внесенные в проект дома изменения могут отразиться на
+                        итоговой смете как в большую, так и в меньшую сторону.
+                    </p>
+                    <p class="developing__desc">
+                        Для адаптации проектной документации под пожелания заказчика и земельный участок может
+                        потребоваться от нескольких дней до месяца - это зависит от количества и объема планируемых
+                        изменений. Если доработать потребуется более 50-70% конструктивных элементов или внести
+                        изменения в несущие конструкции коттеджа, то лучше выбрать индивидуальное проектирование. Как
+                        правило, индивидуальный проект дома обойдется дороже типового, но наградой станет уютный дом с
+                        удобной планировкой и оригинальным дизайном, в котором будет комфортно всем членам семьи.
+                    </p>
+                </div>
+            </div>
+            <img src="assets/img/developing-bg..jpg" alt="" class="developing__bg">
+        </section>
+
+        <section class="question">
+            <div class="container">
+                <h2 class="question__header section-header">Что лучше: заказать готовый проект дома или индивидуальный?
+                </h2>
+                <ul class="question__info-list">
+                    <li class="question__info-list__item">
+                        <span class="question__info-list__item__heading">Готовый проект</span>
+                        <p class="question__info-list__item__desc">
+                            Готовые (типовые) проекты домов разрабатываются на основе конструктивных и архитектурных
+                            решений, проверенных на практике. Инженерным отделом просчитаны все узлы, детали, нагрузка
+                            на стены и многие другие нюансы, скрытые от глаз обывателя. Загородные дома, построенные по
+                            готовым не уступают в надежности и долговечности домам, созданным по индивидуальным
+                            проектам.
+                            <br><br>
+                            От квалификации исполнителей в значительной степени зависит качество внесенных изменений и,
+                            как следствие, уровень итоговой проектной документации. Даже небольшие ошибки и недочеты
+                            обернуться серьезными проблемами, поэтому мы рекомендуем заказывать дома по готовому проекту
+                            в компании, которая их проектировала и строила.
+                            <br><br>
+                            Наш каталог готовых проектов постоянно пополняется. Кстати, мы не называем их типовыми. Все
+                            представленные проекты были разработаны нашими архитекторами. Мы следим за трендами,
+                            перерабатывая всю информацию и разрабатывая новые проекты.
+                        </p>
+                    </li>
+                    <li class="question__info-list__item">
+                        <span class="question__info-list__item__heading">Индивидуальный проект</span>
+                        <p class="question__info-list__item__desc">
+                            Индивидуальное проектирование – это вариант для тех, кто хочет получить максимально
+                            комфортное жилье, учитывающее ритм жизни владельцев, состав семьи, особенности участка и
+                            прочие факторы, способные повлиять на уют в будущем доме.
+                            <br><br>
+                            В рамках предпроектной подготовки мы определим наиболее важные пожелания, подготовим
+                            стилистическую концепцию, подскажем, как будет реализован дизайн вашего собственного
+                            загородного дома. После утверждения эскизов и схем, мы переходим к проведению
+                            гидрогеологических и геодезических изысканий, готовим планы и чертежи, архитектурный проект,
+                            создаем рабочую документацию для строителей.
+                            <br><br>
+                            Специалисты ROTENSTEIN с 2011 года успешно разработали более 286 индивидуальных проектов, и
+                            участвовали в строительстве более 457 объектов по всей России. Поэтому наши проектные
+                            решения привязаны к реальному опыту, современным технологиям строительства и превосходят
+                            ожидания клиентов!
+                        </p>
+                    </li>
+                    <li class="question__info-list__item">
+                        <ul class="question__info-list__item__list">
+                            <span class="question__info-list__item__header">
+                                <img src="assets/img/green-cross..svg" alt="">
+                                Преимущества
+                            </span>
+                            <li class="question__info-list__item__list__item">
+                                Экономия времени и бюджета. Этап согласования исключается - сразу можно закупать
+                                материалы и начинать строительство;
+                            </li>
+                            <li class="question__info-list__item__list__item">
+                                Готовые проекты дешевле индивидуальных, но не каждый проект можно удачно посадить на
+                                участок;
+                            </li>
+                            <li class="question__info-list__item__list__item">
+                                Экономия времени. Стройка начинается буквально через несколько дней после решения о
+                                работе по проекту;
+                            </li>
+                            <li class="question__info-list__item__list__item">
+                                Технологии. Технология и процесс строительства отработаны до мелочей;
+                            </li>
+                            <li class="question__info-list__item__list__item">
+                                Стоимость и сроки. Практически сразу стоимость и сроки строительства известны.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="question__info-list__item">
+                        <ul class="question__info-list__item__list">
+                            <span class="question__info-list__item__header">
+                                <img src="assets/img/green-cross..svg" alt="">
+                                Преимущества
+                            </span>
+                            <li class="question__info-list__item__list__item">
+                                Вы напрямую работаете с архитектором, который учитывает все ваши требования;
+                            </li>
+                            <li class="question__info-list__item__list__item">
+                                Адаптация под размеры участка, учитывается выбор строительных материалов и
+                                ориентировочная стоимость строительства;
+                            </li>
+                            <li class="question__info-list__item__list__item">
+                                Возможность внесения любых изменений;
+                            </li>
+                            <li class="question__info-list__item__list__item">
+                                Можно воплотить сложные идеи, использовать нестандартные технологии строительства,
+                                реализовать необычные проекты.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="question__info-list__item">
+                        <ul class="question__info-list__item__list">
+                            <span class="question__info-list__item__header">
+                                <img src="assets/img/red-cross..svg" alt="">
+                                Недостатки
+                            </span>
+                            <li class="question__info-list__item__list__item">
+                                Невозможно внести существенные изменения. Все просчеты уже выполнены, можно изменить
+                                лишь то, что не будет касаться несущих конструкций. Специалисты Rotenstein всегда
+                                подскажут вам какие изменения можно сделать в выбранном вами проекте;
+                            </li>
+                            <li class="question__info-list__item__list__item">
+                                Нет возможности полностью адаптировать проект под индивидуальные потребности и
+                                характеристики каждого члена семьи.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="question__info-list__item">
+                        <ul class="question__info-list__item__list">
+                            <span class="question__info-list__item__header">
+                                <img src="assets/img/red-cross..svg" alt="">
+                                Недостатки
+                            </span>
+                            <li class="question__info-list__item__list__item">
+                                Индивидуальное проектирование предполагает создание уникального загородного дома с
+                                учетом особенностей каждого члена семьи. Такая работа требует немало трудозатрат и
+                                компетенций и потому не может быть дешевой;
+                            </li>
+                            <li class="question__info-list__item__list__item">
+                                Если после покупки типового проекта можно сразу же приступать к строительству коттеджа,
+                                то разработка индивидуального требует времени. Чем оригинальнее задумка заказчика, тем
+                                больше времени потребуется на воплощение ее в жизнь.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
