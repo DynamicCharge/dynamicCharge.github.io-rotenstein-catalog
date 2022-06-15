@@ -1327,6 +1327,23 @@ table {
     .catalog-page .catalog .show-more {
       max-width: 100%;
       margin-top: 30px; }
+    .catalog-page .catalog .catalog__pager {
+      display: none;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px; }
+      .catalog-page .catalog .catalog__pager .catalog__pager__link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000; }
+        .catalog-page .catalog .catalog__pager .catalog__pager__link._active {
+          color: #B34215; }
   .catalog-page .building {
     padding: 90px 0 124px; }
     .catalog-page .building .building__heading {
@@ -1493,6 +1510,8 @@ table {
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 740px) {
+  .catalog-page .info-trigger {
+    display: none; }
   .catalog-page .building .building__form__wrap {
     display: none; }
   .catalog-page .developing {
@@ -1557,9 +1576,12 @@ table {
     margin-top: -80px; }
   .catalog-page .catalog .catalog__banner {
     position: absolute;
-    left: 0; }
+    left: 0;
+    transform: translateY(40px); }
   .catalog-page .building {
-    padding-top: 532px; } }
+    padding-top: 532px; }
+  .catalog-page .catalog .catalog__pager {
+    display: flex; } }
 
 
 /*# sourceMappingURL=main..css.map*/
