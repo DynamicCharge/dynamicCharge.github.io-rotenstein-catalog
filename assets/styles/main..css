@@ -1118,7 +1118,8 @@ table {
     .catalog-page .catalog .catalog__filter__list {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 15px 6px; }
+      gap: 15px 6px;
+      align-items: flex-start; }
       .catalog-page .catalog .catalog__filter__list._one-column {
         grid-template-columns: 1fr; }
       .catalog-page .catalog .catalog__filter__list:not(:last-child) {
@@ -1128,7 +1129,7 @@ table {
     .catalog-page .catalog .catalog__filter__list__item__label {
       display: flex;
       justify-content: start;
-      align-items: center;
+      align-items: flex-start;
       position: relative; }
       .catalog-page .catalog .catalog__filter__list__item__label span {
         font-style: normal;
