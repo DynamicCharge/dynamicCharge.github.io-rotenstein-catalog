@@ -1544,11 +1544,11 @@ table {
     overflow-y: auto;
     overflow-x: hidden;
     transform: translateX(1000%);
-    visibility: hidden;
+    display: none;
     transition: transform 0.5s; }
     .catalog-page .catalog .catalog__filters._active {
       transform: translateX(0);
-      visibility: visible; }
+      display: block; }
   .catalog-page .catalog .catalog__filters__mobile {
     display: block; }
   .catalog-page .catalog .catalog__filters__overlay {
