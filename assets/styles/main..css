@@ -1329,7 +1329,7 @@ table {
       max-width: 100%;
       margin-top: 30px; }
     .catalog-page .catalog .catalog__pager {
-      display: flex;
+      display: none;
       justify-content: space-between;
       align-items: center;
       max-width: 345px;
@@ -1583,7 +1583,7 @@ table {
   .catalog-page .catalog .catalog__banner {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 40px);
+    transform: translate(-50%, 0);
     max-width: 335px;
     width: 100%; }
   .catalog-page .catalog .catalog__banner__btn img {
@@ -1592,9 +1592,7 @@ table {
     font-size: 22px;
     line-height: 140%; }
   .catalog-page .building {
-    padding-top: 532px; }
-  .catalog-page .catalog .catalog__pager {
-    display: flex; } }
+    padding-top: 532px; } }
 
 
 /*# sourceMappingURL=main..css.map*/
