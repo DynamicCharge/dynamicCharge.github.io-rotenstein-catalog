@@ -1580,8 +1580,15 @@ table {
     margin-top: -80px; }
   .catalog-page .catalog .catalog__banner {
     position: absolute;
-    left: 0;
-    transform: translateY(40px); }
+    left: 50%;
+    transform: translate(-50%, 40px);
+    max-width: 335px;
+    width: 100%; }
+  .catalog-page .catalog .catalog__banner__btn img {
+    width: 150px; }
+  .catalog-page .catalog .catalog__banner__phone {
+    font-size: 22px;
+    line-height: 140%; }
   .catalog-page .building {
     padding-top: 532px; }
   .catalog-page .catalog .catalog__pager {
