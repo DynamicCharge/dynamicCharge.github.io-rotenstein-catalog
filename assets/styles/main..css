@@ -1130,7 +1130,8 @@ table {
       display: flex;
       justify-content: start;
       align-items: center;
-      position: relative; }
+      position: relative;
+      max-height: 17px; }
       .catalog-page .catalog .catalog__filter__list__item__label span {
         font-style: normal;
         font-weight: 300;
